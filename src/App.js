@@ -72,6 +72,16 @@ function App() {
     setLongtitude(parseFloat(longtitude))
     setLatitude(parseFloat(latitude))
   }
+  setTimeout(async () => {
+    const res = await axios.get('http://api.open-notify.org/iss-now.json')
+    console.log(res)
+    const longtitude = res.data.iss_position.longitude
+    const latitude = res.data.iss_position.latitude
+    console.log(longtitude)
+    console.log(latitude)
+    setLongtitude(parseFloat(longtitude))
+    setLatitude(parseFloat(latitude))
+  }, 1000)
   const BydLat = 53.125160431263495
   const BydLng = 17.987401507265236
   const FalkLng = -51.69120967994898
