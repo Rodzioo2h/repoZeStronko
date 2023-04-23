@@ -27,8 +27,8 @@ function App() {
    }
    if(szerokoscDiff > 180){
     console.log(szerokoscDiff)
-    var diffA = szerokoscDiff - 180
-    szerokoscDiff = 180 - diffA
+    var diffC = szerokoscDiff - 180
+    szerokoscDiff = 180 - diffC
     console.log(szerokoscDiff)
    } 
 
@@ -40,8 +40,8 @@ function App() {
    }
    if(dlugoscDiff > 180){
     console.log(dlugoscDiff)
-    var diffB = dlugoscDiff - 180
-    dlugoscDiff = 180 - diffB
+    var diffD = dlugoscDiff - 180
+    dlugoscDiff = 180 - diffD
     console.log(dlugoscDiff)
    }
   
